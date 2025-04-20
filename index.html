@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RM - Discografia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1b2a;
+      color: #fefae0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      background-image: url('A_textured_digital_illustration_features_a_man_nav.png');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 2rem 0 1rem;
+    }
+    .ep-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 3rem;
+    }
+    .ep {
+      background-color: #1b263b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .ep h2 {
+      margin-bottom: 1rem;
+    }
+    .ep button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #e09f3e;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: auto;
+      padding: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .social-button {
+      background-color: #1b263b;
+      border: 2px solid #e09f3e;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      color: #e09f3e;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .social-button:hover {
+      background-color: #e09f3e;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <h1>RM</h1>
+  <section class="ep-list">
+    <div class="ep">
+      <h2>Contenção</h2>
+      <button>Ouvir</button>
+    </div>
+    <div class="ep">
+      <h2>Supernova</h2>
+      <button>Ouvir</button>
+    </div>
+    <div class="ep">
+      <h2>Maio</h2>
+      <button>Ouvir</button>
+    </div>
+    <div class="ep">
+      <h2>No site</h2>
+      <button>Ouvir</button>
+    </div>
+  </section>
+  <footer>
+    <a class="social-button" href="#">Deezer</a>
+    <a class="social-button" href="#">Instagram</a>
+  </footer>
+</body>
+</html>
