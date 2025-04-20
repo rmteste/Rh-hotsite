@@ -16,13 +16,13 @@
     }
     header {
       width: 100%;
-      background-image: url('rm_cover.png');
-      background-size: cover;
-      background-position: center;
-      height: 80vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      height: auto;
+    }
+    header img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      display: block;
     }
     h1 {
       font-size: 3rem;
@@ -45,6 +45,10 @@
     }
     .ep h2 {
       margin-bottom: 1rem;
+    }
+    audio {
+      width: 100%;
+      margin-top: 1rem;
     }
     .ep button {
       padding: 0.5rem 1rem;
@@ -78,12 +82,17 @@
   </style>
 </head>
 <body>
-  <header></header>
+  <header>
+    <img src="banner_rm.png" alt="Banner RM">
+  </header>
   <h1>RM</h1>
   <section class="ep-list">
     <div class="ep">
       <h2>Contenção</h2>
-      <button>Ouvir</button>
+      <audio controls>
+        <source src="rafa.mp3" type="audio/mpeg">
+        Seu navegador não suporta o player de áudio.
+      </audio>
     </div>
     <div class="ep">
       <h2>Supernova</h2>
